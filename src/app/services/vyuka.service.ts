@@ -5,7 +5,7 @@ const poleVyrobku: Array<Vyrobek> = [
   {
     nazev: "chobotnice",
     title: "Chobotnička",
-    popis: "Navod na vytvoreni chobotnicky",
+    popis: "Návod na vytvoření chobotničky",
     pocet: "12",
     cas: "60min",
     kroky: [{
