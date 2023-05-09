@@ -12,12 +12,4 @@ export class HomePage {
 
   constructor(private router: Router, private sessionStorage: SessionStorageService) { }
 
-  public login() {
-    if (this.sessionStorage.retrieve('token')) {
-      this.router.navigateByUrl("/settings");
-    }
-    else if (!this.sessionStorage.retrieve('token')) {
-      this.router.navigateByUrl("/prihlaseni");
-    }
-  }
 }

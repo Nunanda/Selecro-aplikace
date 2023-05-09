@@ -25,20 +25,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div id="body">
+<ion-content> 
     <div *ngFor="let item of items | search:selectedItem">
-      <div class="bunka" (click)='goDetail(item)'>
-        <div class="ruzovy_okraj">{{item.title}}</div>
-        <div class="obsah"> 
+      <ion-card (click)='goDetail(item)'>
+        <ion-header class="header">
+          <ion-card-title>{{item.title}}</ion-card-title>
+        </ion-header>
+        <ion-card-content> 
           <img class="avatar" src="assets/icon/{{item.nazev}}.jpg">
           <div class="popis">
             <b>Čas:</b> {{item.cas}}<br>
             <b>Počet kroků:</b> {{item.pocet}} <br>        
             <b>Popis:</b> {{item.popis}}
           </div>
-        </div> 
-      </div>
+        </ion-card-content> 
+      </ion-card>
     </div>
-  </div>
 </ion-content>

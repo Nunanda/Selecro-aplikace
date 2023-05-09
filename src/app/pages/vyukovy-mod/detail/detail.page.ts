@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { VyukaService } from 'src/app/services';
@@ -10,7 +10,6 @@ import { SwiperComponent } from 'swiper/angular';
   selector: 'app-detail',
   templateUrl: './detail.page.html',
   styleUrls: ['./detail.page.scss'],
-  encapsulation: ViewEncapsulation.None
 })
 
 export class DetailPage implements OnInit {

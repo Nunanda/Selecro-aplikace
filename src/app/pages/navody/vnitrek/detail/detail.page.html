@@ -29,14 +29,14 @@
     </div>
     <div class="line"></div>
     <br>
-    <button (click)="time()">
+    <button class="timer" (click)="time()">
       {{ minutes }}:{{ seconds }}
     </button>
     <div class="popis" name="element" *ngFor="let item of navod.popisy[index].popis">
       {{item}}
     </div>
 
-    <ion-toolbar>
+    <ion-toolbar class="toolbar">
       <div class="footer-buttons">
         <ion-button start class="footer-button" shape="round" (click)="previousIndex()">
           <ion-icon size="small" name="arrow-back-outline"></ion-icon>

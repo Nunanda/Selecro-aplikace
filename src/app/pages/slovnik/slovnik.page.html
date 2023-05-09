@@ -16,32 +16,28 @@
 </ion-header>
 
 <ion-content>
-  <div id="container">
-    <div class="text">
-      <div class="modra">
-        <div class="rozdeleni">
-          <div class="sloupec">
-            <b>Zkratka</b>
-            <ion-card class="zkratka">
-              {{styl.zkratka}}
-            </ion-card>
-          </div>
-          <div class="sloupec">
-            <b>Značka</b>
-            <ion-card class="znacka">
-              <img class="obraz" src="assets/icon/{{styl.nazev}}.svg">
-            </ion-card>
-          </div>
-        </div>
-
-        <br><b>Popis</b>
-        <p class="popisek" innerHTML="{{styl.popis}}"></p>
-      </div>
-
-      <p class="nadpis"><b>Animace</b><br></p>
-      <img class="fotky-slovnik" src="assets/icon/{{styl.nazev}}.gif">
-      <p class="nadpis"><b>Ve skutečnosti</b></p>
-      <img class="fotky-slovnik" src="assets/icon/{{styl.nazev}}-real.png">
-    </div>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-item-divider>
+        <ion-card-title>Zkratka:</ion-card-title>
+        <ion-card class="zkratka">
+          {{styl.zkratka}}
+        </ion-card>
+      </ion-item-divider>
+      <ion-item-divider>
+        <ion-card-title>Značka:</ion-card-title>
+        <ion-card class="znacka">
+          <ion-img class="obraz" src="assets/icon/{{styl.nazev}}.svg"></ion-img>
+        </ion-card>
+      </ion-item-divider>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Popis</strong></p>
+      <p innerHTML="{{styl.popis}}"></p>
+    </ion-card-content>
+  </ion-card>
+  <h4>Animace</h4>
+  <ion-card><ion-img src="assets/icon/{{styl.nazev}}.gif"></ion-img></ion-card>
+  <h4>Ve skutečnosti</h4>
+  <ion-card><ion-img src="assets/icon/{{styl.nazev}}-real.png"></ion-img></ion-card>
 </ion-content>

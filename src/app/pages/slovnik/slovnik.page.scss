@@ -1,41 +1,41 @@
-.nadpis {
-    text-align: center;
-    font-size: 18;
+ion-card-title {
+    font-size: 1.2rem;
+}
+
+ion-item-divider {
+    --background: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .zkratka {
     --background: #ffffff;
-    color: #000000;
+    --color: #000000;
     text-align: center;
-    padding-block: 17px;
+    padding: 25px;
     font-size: xx-large;
 }
 
 .znacka {
-    --background: #ffffff;
-    padding-block: 5px;
+    background-color: #ffffff;
+    padding: 5px;
 }
 
-.modra {
-    background: #c8e7f4;
-    color: #000000;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
-    padding: 10px;
+ion-card {
+    --background: #c8e7f4;
+    --color: #000000;
+    border-radius: 10px;
 }
 
-.fotky-slovnik {
-    --background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+ion-card-header {
+    display: flex;
 }
 
-#container {
-    padding: 20px;
+h4 {
+    text-align: center;
 }
 
 .obraz {
-    width: 60px;
+    height: 78px;
+    width: 78.55px;
 }
