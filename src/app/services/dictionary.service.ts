@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Styl } from '../types'
 
-const poleStylu = [
+const poleStylu: Array<Styl> = [
   {
     nazev: "retizkove-oko",
     title: "Řetízkové oko",

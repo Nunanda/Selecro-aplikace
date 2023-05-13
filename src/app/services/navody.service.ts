@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Navod, Obtiznost, PopisNavodu } from '../types';
 
-const poleNavodu = [
+const poleNavodu: Array<Navod> = [
   {
     obtiznost: Obtiznost.lehky,
     nazev: "dinosaurus",

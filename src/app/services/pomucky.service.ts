@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Pomucka } from '../types'
 
-const polePomucek = [
+const polePomucek: Array<Pomucka> = [
   {
     nazev: "hacek",
     title: "Háček",
